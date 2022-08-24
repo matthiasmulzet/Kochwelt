@@ -1,0 +1,60 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kontakt</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_small.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+     rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="header.html"></div>
+
+    <h2 class="h2-contact margin-top">Kontakt</h2>
+    <div class="contact-formular padding-left-right">
+        <form action="http://matthias-mulzet.developerakademie.net/Kochwelt/send_mail.php" method="post">
+            <p>Name</p>
+            <input id="yourName" class="your-name" name="name" type="text" placeholder="Dein Name" required>
+            <p>Nachricht</p>
+            <textarea class="your-message" name="message"
+             placeholder="Deine Nachricht an uns..." required></textarea>
+            <button class="button-portions" type="submit">
+                Mail senden</button>
+        </form>
+        <div class="contact-image">
+            <img src="images/koch.png" alt="Koch">
+            <div class="overlay">
+                <div class="text-over-picture">Fülle das 
+                    Formular aus 
+                    und lasse uns 
+                    eine Nachricht 
+                    zukommen!</div>
+              </div>
+        </div>
+    </div>
+
+    <div id="footer" class="footer padding-left-right">
+        <div class="footer-image-container"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="footer-links">
+            <div>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <p>|</p>
+            <div>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <p>|</p>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </div>
+    </div>
+
+</body>

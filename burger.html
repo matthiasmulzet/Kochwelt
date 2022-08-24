@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Burger vom Grill</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_small.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+
+    <script src="script.js"></script>
+
+
+</head>
+
+<body onload="onloadBurger()">
+
+    <div w3-include-html="header.html"></div>
+
+    <div class="margin-top padding-left-right">
+        <h1>Burger vom Grill</h1>
+        <div>
+            <img class="recipe-picture" src="images/burger.jpg" alt="burger">
+        </div>
+
+        <div class="main-div-after-recipe">
+            <div class="little-divs-information smaller-size">
+                <img src="icons/clock-regular.svg" alt="clock">
+                <p>2 1/2 Std.</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/brain-solid.svg" alt="brain">
+                <p>simpel</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/calendar-alt-regular.svg" alt="calendar">
+                <p>20.06.2022</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ingredients padding-left-right">
+        <div class="ingredients-margin">
+            <p>Zutaten für</p>
+        </div>
+
+        <div class="ingredients-margin">
+            <input type="number" id="input" value="4"
+                class="input-field" min="1" max="1000">
+            <button onclick="calculateIngredient()" class="button-portions">Portionen</button>
+        </div>
+    </div>
+
+    <div class="ingredients-table-div padding-left-right">
+        <table id="ingredients-table">
+            <tr>
+                <td id="beef">250 gr Rinderhackfleisch</td>
+            </tr>
+            <tr>
+                <td id="onions">1 EL Zwiebeln</td>
+            </tr>
+            <tr>
+                <td id="ketchup">3/4 EL Ketchup</td>
+            </tr>
+            <tr>
+                <td id="mustard">1/2 EL Senf</td>
+            </tr>
+            <tr>
+                <td id="pepper">1/2 TL Pfeffer</td>
+            </tr>
+            <tr>
+                <td id="salt">1/2 TL Salz</td>
+            </tr>
+            <tr>
+                <td id="oregano">1/2 TL Oregano</td>
+            </tr>
+            <tr>
+                <td id="cheddar">1 Scheibe Cheddarkäse</td>
+            </tr>
+            <tr>
+                <td id="bacon">100 gr Bacon</td>
+            </tr>
+            <tr>
+                <td id="buns">2 Hamburgerbrötchen</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 class="preparation-h1 padding-left-right">Zubereitung</h2>
+    <div class="preparation-divs padding-left-right">
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>ca. 15 Minuten</p>
+        </div>
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>Gesamtzeit ca. 45 Minuten</p>
+        </div>
+    </div>
+
+    <div class="work-steps padding-left-right">
+        <p>
+            Das Rindfleisch in eine Schüssel geben. Die oben genannten Gewürze zugeben und alles vorsichtig durchkneten. Den
+            Fleischteig in 4 gleich große Portionen teilen. Zu flachen Patties formen (nur locker formen, nicht zu fest pressen) und
+            mit einem Löffel jeweils eine leichte Vertiefung in der Mitte der Oberseite eindrücken, damit die Patties sich nicht
+            verformen und gleichmäßig garen. Für mindestens 2 Stunden im Kühlschrank ziehen lassen.
+            
+            Auf dem Holzkohlengrill bei hoher direkter Hitze 8 - 10 Min. bei geschlossenem Deckel grillen, dabei einmal wenden. Eine
+            Minute vor Ende der Garzeit die Burger auf einer Seite nach Belieben salzen, pfeffern und die Käsescheiben auflegen.
+            
+            Kommt Bacon mit auf den Burger, diesen auf dem Grill knusprig kross bei indirekter Hitze braten. Am besten schon vor dem
+            Auflegen des Rindfleisches.
+            
+            Burgerbrötchen im Backofen oder auf dem Grill (Vorsicht verbrennt leicht) kurz erwärmen.
+            
+            Nun die Burger nach Belieben mit Senf, Mayo, Ketchup oder BBQ-Sauce, Eisbergsalat, Tomatenscheiben, Gurkenscheiben,
+            Zwiebelringen und Bacon belegen.
+        </p>
+    </div>
+
+    <h3 class="padding-left-right">Rezept erstellt von</h3>
+    <div class="recipe-from padding-left-right">
+        <div>
+            <img src="images/profile.jpg" alt="profil picture">
+        </div>
+        <div>
+            <p>Matthias Naber</p>
+        </div>
+    </div>
+
+    <div id="footer" class="footer padding-left-right">
+        <div class="footer-image-container"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="footer-links">
+            <div>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <p>|</p>
+            <div>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <p>|</p>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

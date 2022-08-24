@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Paprika Cashew Pasta</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;1,100;1,200&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Raleway:ital,wght@0,200;0,400;0,600;1,100;1,200&family=Roboto&display=swap"
+        rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo_small.png">
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="onloadPasta()">
+
+    <div w3-include-html="header.html"></div>
+
+    <div class="margin-top padding-left-right">
+        <h1>Paprika-Cashew-Pasta</h1>
+        <div>
+            <img class="recipe-picture" src="images/Paprika-Cashew-Pasta.jpg" alt="Paprika Cashew Pasta">
+        </div>
+
+        <div class="main-div-after-recipe">
+            <div class="little-divs-information smaller-size">
+                <img src="icons/clock-regular.svg" alt="clock">
+                <p>15 Min.</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/brain-solid.svg" alt="brain">
+                <p>simpel</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/calendar-alt-regular.svg" alt="calendar">
+                <p>26.06.2022</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ingredients padding-left-right">
+        <div class="ingredients-margin">
+            <p>Zutaten für</p>
+        </div>
+
+        <div class="ingredients-margin">
+            <input type="number" id="input-pasta" value="4"
+             class="input-field" min="1" max="1000">
+            <button onclick="calculateIngredientPasta()" class="button-portions">Portionen</button>
+        </div>
+    </div>
+
+    <div class="ingredients-table-div padding-left-right">
+        <table id="ingredients-table">
+            <tr>
+                <td id="spinat">200g Babyspinat</td>
+            </tr>
+            <tr>
+                <td id="gewürz">1 Päckchen Gemüsebrühegewürz</td>
+            </tr>
+            <tr>
+                <td id="hefeflocken" >1 Päckchen Hefeflocken</td>
+            </tr>
+            <tr>
+                <td id="nuss">25g Pekannusskerne</td>
+            </tr>
+            <tr>
+                <td id="paprikapulver">1 Päckchen geräuchertes Paprikapulver</td>
+            </tr>
+            <tr>
+                <td id="peperoni">1 rote Peperoni</td>
+            </tr>
+            <tr>
+                <td id="s+p">Salz und Pfeffer (je nach Geschmack)</td>
+            </tr>
+            <tr>
+                <td id="knoblauch">1 Knoblauchzehe</td>
+            </tr>
+            <tr>
+                <td id="paprika">1 rote Paprika</td>
+            </tr>
+            <tr>
+                <td id="penne">200 g Penne</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 class="preparation-h1 padding-left-right">Zubereitung</h2>
+    <div class="preparation-divs padding-left-right">
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>Arbeitszeit ca. 15 Minuten</p>
+        </div>
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>Gesamtzeit ca. 30 Minuten</p>
+        </div>
+    </div>
+
+    <div class="work-steps padding-left-right">
+        <p>
+            Wasser für die Pasta in einem ausreichend großen Topf zum kochen bringen und ausreichend salzen. Die
+            Cashews mahlen, den Knoblauch schälen und grob würfeln und die Paprika entkernen und vierteln.
+            Die Paprika mit 1 EL Olivenöl und einer prise Salz bei starker Hitze anbraten. Den Knoblauch dazugeben
+            und mitgaren.
+            Die Pasta in das kochende Wasser geben und in 8-10 Min. bissfest kochen. Die Chshews und die Paprika mit
+            1-2 TL Essig und der Hälfte der Hefeflocken, der Hälfte des Brühgewürzes, sowie 1 kräftige Prise
+            Paprikapulver cremix pürieren.
+            Die Cashewcreme und den Spinat in die Pfanne geben und bei mittlerer Hitze erwärmen, bis die Creme
+            leicht eindickt. Die Pasta untermengen und mit Salz und Pfeffer abschmecken.
+        </p>
+    </div>
+
+    <h3 class="padding-left-right">Rezept erstellt von</h3>
+    <div class="recipe-from padding-left-right">
+        <div>
+            <img src="images/konstantin.jpg" alt="profil picture">
+        </div>
+        <div>
+            <p>Konstantin</p>
+        </div>
+    </div>
+
+    <div id="footer" class="footer padding-left-right">
+        <div class="footer-image-container"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="footer-links">
+            <div>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <p>|</p>
+            <div>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <p>|</p>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Kochwelt</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;1,100;1,200&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&family=Raleway:ital,wght@0,200;0,400;0,600;1,100;1,200&family=Roboto&display=swap"
+        rel="stylesheet">
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo_small.png">
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/header.html"></div>
+    <section1>
+        <div class="header">
+            <a href="index.html">
+                <img src="img/logo.png" class="logo">
+            </a>
+            <div class="header-nav hide-mobile">
+                <a id="index" href="#Start">Start</a>
+                <a id="receipeoftheday" href="#Rezept des Tages">Rezept des Tages</a>
+                <a id="contact" href="#Kontakt">Kontakt</a>
+                <a id="Impressum" href="#Impressum">Impressum</a>
+            </div>
+
+        </div>
+
+    </section1>
+
+    <section2>
+        <div class="dish">
+            <div>
+                <h1>Paprika-Cashew-Pasta</h1>
+            </div>
+
+            <div>
+                <img src="img/Paprika-Cashew-Pasta vegan.jpg" class="pasta">
+            </div>
+
+            <div class="recipe-data-container">
+                <div class="recipe-data bg-gray">
+                    <img src="img/svg/clock-regular.svg" alt>
+                    <div class="data">15 min.</div>
+                </div>
+
+                <div class="recipe-data bg-gray">
+                    <img src="img/svg/brain-solid.svg" class="level">
+                    <div class="data">Einfach</div>
+                </div>
+
+                <div class="recipe-data bg-gray">
+                    <img src="img/svg/calendar-alt-regular.svg" class="calender">
+                    <div class="data">26.06.2022</div>
+                </div>
+
+
+            </div>
+
+    </section2>
+
+
+    <section3>
+        <div class="calc">
+            <p>Zutaten für </p>
+            <input min="1" id="input" class="inputfield" type="number" placeholder="1">
+            <button onclick="calculateIngredient()" class="portion-btn">
+                <p class="portion-btn-text">Portionen</p>
+        </div>
+        <table>
+            <tr>
+                <td id="spinat" class="bgc1">200g Babyspinat (n)</td>
+            </tr>
+            <tr>
+                <td id="gewürz" class="bgc2">1 Päckchen Gemüsebrühgewürz</td>
+            </tr>
+            <tr>
+                <td id="hefeflocken" class="bgc1">1 Päckchen Hefeflocken (n)</td>
+            </tr>
+            <tr>
+                <td id="nuss" class="bgc2">25g Pekannusskerne (n)</td>
+            </tr>
+            <tr>
+                <td id="paprikapulver" class="bgc1">1 Päckchen geräuchertes Paprikapulver (n)</td>
+            </tr>
+            <tr>
+                <td id="peperoni" class="bgc2">1 rote Peperoni (n)</td>
+            </tr>
+            <tr>
+                <td id="s+p" class="bgc1">Salz und Pfeffer (je nach Geschmak)</td>
+            </tr>
+            <tr>
+                <td id="knoblauch" class="bgc2">1 Knoblauchzehe (n)</td>
+            </tr>
+            <tr>
+                <td id="paprika" class="bgc1">1 rote Paprika</td>
+            </tr>
+            <tr>
+                <td id="penne" class="bgc2">200g Penne</td>
+            </tr>
+
+
+
+        </table>
+
+    </section3>
+
+    <section4>
+        <div>
+            <h2>Zubereitung</h2>
+        </div>
+        <div class="discription">
+            <p>Wasser für die Pasta in einem ausreichend großen Topf zum kochen bringen und ausreichend salzen. Die
+                Cashews mahlen, den Knoblauch schälen und grob würfeln und die Paprika entkernen und vierteln.
+                Die Paprika mit 1 EL Olivenöl und einer prise Salz bei starker Hitze anbraten. Den Knoblauch dazugeben
+                und mitgaren.
+                Die Pasta in das kochende Wasser geben und in 8-10 Min. bissfest kochen. Die Chshews und die Paprika mit
+                1-2 TL Essig und der Hälfte der Hefeflocken, der Hälfte des Brühgewürzes, sowie 1 kräftige Prise
+                Paprikapulver cremix pürieren.
+                Die Cashewcreme und den Spinat in die Pfanne geben und bei mittlerer Hitze erwärmen, bis die Creme
+                leicht eindickt. Die Pasta untermengen und mit Salz und Pfeffer abschmecken.
+            </p>
+        </div>
+
+        <div>
+            <h3>Rezept erstellt von</h3>
+
+        </div>
+        <div class="about">
+            <img src="img/profile.jpg" class="profile">
+            <span>Konstantin Sykow</span>
+        </div>
+    </section4>
+
+    <section5>
+        <div class="footer">
+
+            <div class="footer-container">
+                <a href="index.html">
+                    <img src="img/logo.png" class="logo">
+                </a>
+                <div class="footer-links">
+                    <a id="Kontakt" href="Kontakt.html">Kontakt</a>
+                    <a>|</a>
+                    <a id="Datenschutz" href="Datenschutz.html">Datenschutz</a>
+                    <a>|</a>
+                    <a id="Impressum" href="Impressum.html">Impressum</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section5>
+
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

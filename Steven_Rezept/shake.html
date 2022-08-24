@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kochwelt</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo_small.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="shake.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/header.html"></div>
+
+    <section1>
+        <h1>Protein-Masse-Shake</h1>
+        <div class="picture-of-food"></div>
+        <div class="all-suggestions">
+            <div class="suggestion">
+                <img class="icon" src="img/icons/clock-regular.svg" alt="clock-icon">
+                <p class="suggestion-text">5 Min.</p>
+            </div>
+            <div class="suggestion">
+                <img class="icon" src="img/icons/brain-solid.svg" alt="brain-icon">
+                <p class="suggestion-text">simpel</p>
+            </div>
+            <div class="suggestion">
+                <img class="icon" src="img/icons/calendar-alt-regular.svg" alt="calendar-icon">
+                <p class="suggestion-text">20.06.2022</p>
+            </div>
+        </div>
+    </section1>
+    <section2>
+        <div class="seperation-line"></div>
+        <div class="how-many-portions">
+            <p class="section2-text">Zutaten für</p>
+            <div class="mobile-input">
+                <input min="1" id="input" class="inputfield" type="number" placeholder="1">
+                <button onclick="calculateIngredient()" class="portion-btn">
+                    <p class="portion-btn-text">Portionen</p>
+                </button>
+            </div>
+        </div>
+        <div>
+            <p id="pPowder" class="ingredient ing-background">30g Proteinpulver</p>
+            <p id="milk" class="ingredient red">350ml Milch</p>
+            <p id="ice" class="ingredient ing-background">2 Esslöffel Eiscreme</p>
+            <p id="oats" class="ingredient">1 Hand voll Haferflocken</p>
+            <p id="bananas" class="ingredient ing-background">1 Banane (n)</p>
+            <p id="strawberrys" class="ingredient">100g Hand voll Erdbeeren</p>
+            <p id="oil" class="ingredient ing-background">1 Esslöffel natives Walnussöl</p>
+            <p id="peanuts" class="ingredient">1 Esslöffel Erdnussbutter</p>
+        </div>
+    </section2>
+    <section3>
+        <h2>Zubereitung</h2>
+        <div class="how-you-cook-it">
+            <div class="suggestion">
+                <img class="icon" src="img/icons/clock-regular.svg" alt="clock-icon">
+                <p class="suggestion-text">ca. 5 Minuten</p>
+            </div>
+            <div class="suggestion">
+                <img class="icon" src="img/icons/clock-regular.svg" alt="clock-icon">
+                <p class="suggestion-text">Gesamtzeit ca. 5 Minuten</p>
+            </div>
+        </div>
+        <p class="description">
+            Bei diesem Rezept kann man echt nicht viel falsch machen. Einfach alle Zutaten in einen Mixer geben und dann
+            für 2 - 3 Minuten durchmixen. Das Ergebis sind leckere 1.300kcal in einem Glas. Prost!
+        </p>
+    </section3>
+    <section4>
+        <h3>Rezept erstellt von</h3>
+        <div class="creator">
+            <img class="profile-pic" src="img/Steven Munk.jpg" alt="profile-picture">
+            <p class="creator-name">Steven</p>
+        </div>
+    </section4>
+
+    <!--<div w3-include-html="templates/impressum.html"></div>-->
+    <!--<div w3-include-html="templates/datenschutz.html"></div>--> 
+
+</body>
+
+</html>

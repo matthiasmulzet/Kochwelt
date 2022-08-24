@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Rote Linsen-Curry</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_small.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+    <script src="script.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+     rel="stylesheet">
+
+</head>
+
+<body onload="onloadCurry()">
+
+    <div w3-include-html="header.html"></div>
+
+    <div class="margin-top padding-left-right">
+        <h1>Rote Linsen-Curry</h1>
+        <div>
+            <img class="recipe-picture" src="images/rote-linsen-curry.jpg" alt="rote Linsen">
+        </div>
+
+        <div class="main-div-after-recipe">
+            <div class="little-divs-information smaller-size">
+                <img src="icons/clock-regular.svg" alt="clock">
+                <p>10 Min.</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/brain-solid.svg" alt="brain">
+                <p>simpel</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/calendar-alt-regular.svg" alt="calendar">
+                <p>17.06.2022</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ingredients padding-left-right">
+        <div class="ingredients-margin">
+            <p>Zutaten für</p>
+        </div>
+
+        <div class="ingredients-margin">
+            <input type="number" id="input-field-number" value="4"
+             class="input-field" min="1" max="1000">
+            <button onclick="calc()" class="button-portions">Portionen</button>
+        </div>
+    </div>
+
+    <div class="ingredients-table-div padding-left-right">
+        <table id="ingredients-table">
+            <tr>
+                <td>150 g Süßkartoffel(n)</td>
+            </tr>
+            <tr>
+                <td>0,33 große Paprikaschote(n)</td>
+            </tr>
+            <tr>
+                <td>0,67 Knoblauchzehe(n)</td>
+            </tr>
+            <tr>
+                <td>0,67 große Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td>0,33 EL Olivenöl</td>
+            </tr>
+            <tr>
+                <td>0,67 EL Tomatenmark</td>
+            </tr>
+            <tr>
+                <td>0,67 TL Currypulver</td>
+            </tr>
+            <tr>
+                <td>0,67 TL Kurkuma</td>
+            </tr>
+            <tr>
+                <td>0,33 TL Garam Masala</td>
+            </tr>
+            <tr>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td>66,7 g rote Linsen</td>
+            </tr>
+            <tr>
+                <td>167 ml Kokosmilch</td>
+            </tr>
+            <tr>
+                <td>83,3 ml Gemüsebrühe</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 class="preparation-h1 padding-left-right">Zubereitung</h2>
+    <div class="preparation-divs padding-left-right">
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>Arbeitszeit ca. 10 Minuten</p>
+        </div>
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>Kochzeit ca. 35 Minuten</p>
+        </div>
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>Gesamtzeit ca. 45 Minuten</p>
+        </div>
+    </div>
+
+    <div class="work-steps padding-left-right">
+        <p>
+            Die Süßkartoffeln schälen und würfeln. Die Paprikaschote würfeln, 
+            den Knoblauch schälen und die Zwiebeln klein schneiden. Das Olivenöl
+            in einem großen Topf erhitzen und die Zwiebeln glasig anschwitzen. 
+            Den Knoblauch durch die Presse in den Topf drücken, kurz mitbraten
+            und dann Süßkartoffeln und Paprika in den Topf geben. Das Tomatenmark
+            und die Gewürze dazugeben und kurz mitbraten, anschließend die Linsen 
+            hinzufügen. Nun alles mit Kokosmilch und Gemüsebrühe aufgießen und
+            ca. 25 min. köcheln lassen.
+        </p>
+    </div>
+
+    <h3 class="padding-left-right">Rezept erstellt von</h3>
+    <div class="recipe-from padding-left-right">
+        <div>
+            <img src="images/profile-picture.png" alt="profil picture">
+        </div>
+        <div>
+            <p>Matthias</p>
+        </div>
+    </div>
+
+    <div id="footer" class="footer padding-left-right">
+        <div class="footer-image-container"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="footer-links">
+            <div>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <p>|</p>
+            <div>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <p>|</p>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

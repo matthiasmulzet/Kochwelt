@@ -1,0 +1,413 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-top: 145px;
+    margin-bottom: 0px;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+}
+
+p {
+    font-family: "raleway";
+}
+
+
+
+
+/*header*/
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0 -3px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    padding-top: 20px;
+    padding-bottom: 7px;
+}
+
+.kw-logo {
+    width: 350px;
+}
+
+.nav-bar {
+    font-family: "raleway";
+    display: flex;
+    align-items: end;
+    position: relative;
+    top: 7px;
+}
+
+.nav-bar-link {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-bar-link:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.nav-bar-link:active {
+    color: rgba(0, 128, 0, 0.8)
+}
+
+.hover-link {
+    border-bottom: solid 5px;
+    color: white;
+    margin-right: 25px;
+    padding-bottom: 5px;
+}
+
+.hover-link:hover {
+    cursor: pointer;
+    color: green;
+}
+
+.hover-link:active {
+    color: rgba(0, 128, 0, 0.8)
+}
+
+
+
+
+
+
+/*section1*/
+
+
+h1 {
+    font-family: "raleway";
+    font-weight: 600;
+    padding-top: 70px;
+    font-size: 48px;
+}
+
+p {
+    font-family: "raleway";
+}
+
+.picture-of-food {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url("img/burger.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+}
+
+.all-suggestions {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 236, 236);
+    border-radius: 10px;
+    height: 40px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.suggestion-text {
+    font-size: 25px;
+    font-weight: 300;
+    padding-right: 10px;
+    width: max-content;
+}
+
+
+
+
+
+
+/*section2*/
+
+.seperation-line {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(238, 236, 236);
+}
+
+.how-many-portions {
+    display: flex;
+    align-items: center;
+}
+
+.section2-text {
+    font-size: 25px;
+    font-weight: 300;
+    padding-right: 25px;
+}
+
+.inputfield {
+    height: 50px;
+    padding-left: 5px;
+    border: solid 2px rgb(238, 236, 236);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Raleway';
+    font-size: 20px;
+}
+
+.inputfield::placeholder {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.mobile-input {
+    display: flex;
+}
+
+.portion-btn {
+    height: 56px;
+    background-color: rgb(0, 128, 0);
+    border: none;
+}
+
+.portion-btn:hover {
+    background-color: rgba(0, 128, 0, 0.8);
+    cursor: pointer;
+}
+
+.portion-btn:active {
+    background-color: rgba(0, 128, 0, 0.6);
+    cursor: pointer;
+}
+
+.portion-btn-text {
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: white;
+}
+
+.ingredient {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+}
+
+.ing-background {
+    background-color: rgb(238, 236, 236);
+    border-radius: 10px;
+}
+
+
+
+
+/*section3*/
+
+h2 {
+    font-family: "raleway";
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 38px;
+}
+
+.how-you-cook-it {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.description {
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+
+
+
+
+/*section4*/
+
+h3 {
+    font-family: "raleway";
+    font-weight: 600;
+    padding-top: 20px;
+    font-size: 28px;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+.profile-pic {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.creator-name {
+    font-family: "raleway";
+    font-weight: 300;
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+/*responive design*/
+
+
+@media(max-width: 1252px) {
+    .rdt {
+        display: none;
+    }
+}
+
+@media(max-width: 1000px) {
+
+    body {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .kw-logo {
+        width: 330px;
+        padding-left: 25px
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: -2px;
+        box-shadow: 0 -3px 10px 1px rgb(0 0 0 / 50%);
+    }
+
+    .header-content {
+        justify-content: center;
+    }
+
+    h1 {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .picture-of-food {
+        background-position-y: 0px;
+    }
+
+    .all-suggestions {
+        flex-direction: column;
+        width: max-content;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .suggestion {
+        height: 35px;
+        margin: 3px;
+    }
+
+    .suggestion-text {
+        font-size: 20px;
+    }
+
+    .icon {
+        width: 17px;
+        height: 17px;
+        padding-right: 10px;
+    }
+
+    .section2-text {
+        padding-right: 0px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .seperation-line {
+        margin-top: 5px;
+    }
+
+    .how-many-portions {
+        flex-direction: column;
+    }
+
+    .mobile-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputfield {
+        border-radius: 10px;
+        margin-bottom: 5px;
+        position: relative;
+        bottom: 10px;
+        width: 170px;
+    }
+
+    .portion-btn {
+        border-radius: 10px;
+        position: relative;
+        bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .how-you-cook-it {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .description {
+        padding-top: 0px;
+    }
+
+    h3 {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .creator {
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+
+}

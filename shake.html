@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Protein-Masse-Shake</title>
+    <link rel="icon" type="image/x-icon" href="images/logo_small.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Macondo&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive-style.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body onload="onloadShake()">
+
+    <div w3-include-html="header.html"></div>
+
+    <div class="margin-top padding-left-right">
+        <h1>Protein-Masse-Shake</h1>
+        <div>
+            <img class="recipe-picture" src="images/shake.jpg" alt="Shake">
+        </div>
+
+        <div class="main-div-after-recipe">
+            <div class="little-divs-information smaller-size">
+                <img src="icons/clock-regular.svg" alt="clock">
+                <p>5 Min.</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/brain-solid.svg" alt="brain">
+                <p>simpel</p>
+            </div>
+
+            <div class="little-divs-information smaller-size">
+                <img src="icons/calendar-alt-regular.svg" alt="calendar">
+                <p>20.06.2022</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ingredients padding-left-right">
+        <div class="ingredients-margin">
+            <p>Zutaten für</p>
+        </div>
+
+        <div class="ingredients-margin">
+            <input type="number" id="input-shake" value="4"
+             class="input-field" min="1" max="1000">
+            <button onclick="calculateIngredientShake()" class="button-portions">Portionen</button>
+        </div>
+    </div>
+
+    <div class="ingredients-table-div padding-left-right">
+        <table id="ingredients-table">
+            <tr>
+                <td id="pPowder">30g Proteinpulver</td>
+            </tr>
+            <tr>
+                <td id="milk">350ml Milch</td>
+            </tr>
+            <tr>
+                <td id="ice">2 Esslöffel Eiscreme</td>
+            </tr>
+            <tr>
+                <td id="oats">1 Hand voll Haferflocken</td>
+            </tr>
+            <tr>
+                <td id="bananas">1 Banane (n)</td>
+            </tr>
+            <tr>
+                <td id="strawberrys">100g Hand voll Erdbeeren</td>
+            </tr>
+            <tr>
+                <td id="oil">1 Esslöffel natives Walnussöl</td>
+            </tr>
+            <tr>
+                <td id="peanuts">1 Esslöffel Erdnussbutter</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 class="preparation-h1 padding-left-right">Zubereitung</h2>
+    <div class="preparation-divs padding-left-right">
+        <div class="little-divs-information other-margin">
+            <img src="icons/calendar-alt-regular.svg" alt="calendar">
+            <p>ca. 5 Minuten</p>
+        </div>
+    </div>
+
+    <div class="work-steps padding-left-right">
+        <p>
+            Bei diesem Rezept kann man echt nicht viel falsch machen.
+            Einfach alle Zutaten in einen Mixer geben und dann
+            für 2 - 3 Minuten durchmixen. Das Ergebis sind leckere 1.300kcal
+            in einem Glas. Prost!
+        </p>
+    </div>
+
+    <h3 class="padding-left-right">Rezept erstellt von</h3>
+    <div class="recipe-from padding-left-right">
+        <div>
+            <img src="images/Steven Munk.jpg" alt="profil picture">
+        </div>
+        <div>
+            <p>Steven</p>
+        </div>
+    </div>
+
+    <div id="footer" class="footer padding-left-right">
+        <div class="footer-image-container"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="footer-links">
+            <div>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            <p>|</p>
+            <div>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <p>|</p>
+            <div><a href="kontakt.html">Kontakt</a></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

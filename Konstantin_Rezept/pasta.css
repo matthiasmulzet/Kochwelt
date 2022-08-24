@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ralewaay', sans-serif;
+    left: 0px;
+    right: 0px;
+    box-sizing: border-box;
+
+}
+
+.header {
+
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px rgb(191, 191, 191);
+    padding-bottom: 15px;
+
+}
+
+/* Graue Symbole unterhalb des Bildes */
+.recipe-data img {
+    height: 16px;
+    width: auto;
+    padding-right: 15px;
+
+
+}
+
+.recipe-data {
+    display: flex;
+    border-radius: 8px;
+    padding: 4px 8px 4px 8px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.bg-gray {
+    background-color: #efefef;
+}
+
+.recipe-data-container {
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 0px 0.5px rgb(191, 191, 191);
+}
+
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    font-family: Raleway;
+    margin-top: 200px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.header-nav {
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+
+.header-nav a:hover {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    border-bottom: 5px solid;
+    transition: all 225ms;
+
+}
+
+
+
+.pasta {
+    display: flex;
+    object-fit: cover;
+    position: relative;
+    height: 30em;
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+
+
+.bgc1 {
+    background-color: #efefef;
+    padding: 25px;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+.bgc2 {
+    padding: 25px;
+}
+
+
+.calc {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+p {
+    padding-right: 5px;
+}
+
+table {
+
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+
+button {
+    padding-left: 45px;
+    padding-right: 45px;
+    background-color: #008000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006900;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-right: 150px;
+    top: 0;
+}
+
+
+.discription {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+
+
+.profile {
+    border-radius: 100%;
+    height: 150px;
+
+}
+
+.about {
+    display: flex;
+
+}
+
+
+
+span {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-size: 25px;
+    display: flex;
+}
+
+.footer {
+
+    min-height: 400px;
+    background-color: #545454;
+
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    font-size: 20px;
+
+}
+
+.footer-container {
+    display: flex;
+    margin-top: 70px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5em !important;
+        object-fit: cover;
+
+
+    }
+
+
+    .pasta {
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        border-radius: 15px 15px 15px 15px;
+
+    }
+
+    .header-nav {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 35px;
+        display: none;
+        cursor: pointer;
+    }
+
+
+    span {
+        padding-left: 50px;
+        padding-top: 50px;
+        font-size: 25px;
+        display: flex;
+    }
+
+
+    .footer-container {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+
+
+
+}
